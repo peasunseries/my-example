@@ -1,0 +1,1 @@
+java -Dspring.profiles.active="dev" -jar target/spring-profile-1.0-SFNAPSHOT.jar
