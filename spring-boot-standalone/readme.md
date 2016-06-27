@@ -1,0 +1,1 @@
+java -Dspring.config.location=/Users/pea.chiwa/configuration/spring-boot-example/application.yml -Dlogging.config=/Users/pea.chiwa/configuration/spring-boot-example/logback.xml -jar application.jar
