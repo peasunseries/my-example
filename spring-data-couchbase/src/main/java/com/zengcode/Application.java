@@ -19,6 +19,6 @@ public class Application {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
         Application application = ctx.getBean(Application.class);
-        log.info("===============>>>> Hello : " + application.repository.findOne("advert::0086bc11-2c57-476b-a618-6730555f985f"));
+        System.out.println("===============>>>> Hello : " + application.repository.findOne("advert::0086bc11-2c57-476b-a618-6730555f985f"));
     }
 }

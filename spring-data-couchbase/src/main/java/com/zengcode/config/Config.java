@@ -1,4 +1,4 @@
-package com.zengcode;
+package com.zengcode.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;

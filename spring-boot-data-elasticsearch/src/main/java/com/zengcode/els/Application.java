@@ -27,7 +27,7 @@ public class Application {
 
         System.out.println("name ===>>> " + application.movieService.getByName("Star Wars"));
         System.out.println("id ===>>> " + application.movieService.getById("2"));
-        System.out.println("Genre name  ===>>> " + application.movieService.getByGenreName("ROMANCE"));
+        System.out.println("Genre name  ===>>> " + application.movieService.getByGenreName("ROMANCE")); //Nested
     }
 
     private void addSomeMovies() {
