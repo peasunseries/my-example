@@ -26,8 +26,8 @@ public class Application {
         ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
         Application application = ctx.getBean(Application.class);
         System.out.println("===============>>>> Hello1 : " + application.repository.findOne("advert::0086bc11-2c57-476b-a618-6730555f985f"));
-        //System.out.println("===============>>>> Hello2 : " + application.repository.findAll(new PageRequest(0, 10)));
-        System.out.println("===============>>>> Hello3 : " + application.myService.findByName2());
+        System.out.println("===============>>>> Hello2 : " + application.repository.findByName("Advertisement 73"));
+        System.out.println("===============>>>> Hello3 : " + application.myService.findByName2("Advertisement 73"));
 
         N1qlQueryResult queryResult = application.myService.findByName();
         for (N1qlQueryRow n1qlQueryRow : queryResult) {

@@ -24,13 +24,22 @@ public class MyService {
          return template.queryN1QL(queryWithParameter);*/
     }
 
-    public List<AdvertModel> findByName2() {
-        N1qlQuery queryWithParameter = N1qlQuery.simple("select * from advertisement where name  = 'Advertisement 73' ");
+
+
+
+
+    public List<AdvertModel> findByName2(String name) {
+        N1qlQuery queryWithParameter = N1qlQuery.simple("select * from advertisement where name  = '" + name + "' ");
         return template.queryN1QL(queryWithParameter)
                 .allRows()
                 .stream()
                 .map(row -> new Gson().fromJson(row.toString(), AdvertModel.class))
                 .collect(Collectors.toList());
     }
+
+
+
+
+
 
 }
