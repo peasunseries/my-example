@@ -13,7 +13,7 @@ public class AdvertModel implements Serializable {
     @Id
     private String id;
 
-    @Field
+    @Field("name") //in couchbase
     private String name;
 
     @Field
